@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace GITLearning.Models
 {
-    class BranchInfo
+    class NecessaryBranchInfo
     {
-        public string Name { get; set; }
+        public string BranchName { get; set; }
+
         public int CommitCount { get; set; }
+
+        public List<NecessaryBranchInfo> Commits { get; set; }
+
+        public bool IsOriginator { get; set; }
     }
 }
